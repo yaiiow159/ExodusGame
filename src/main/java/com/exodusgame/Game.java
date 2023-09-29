@@ -234,7 +234,7 @@ public class Game extends JPanel implements KeyListener {
 
     private void resetGame(GameView gameView) {
         Game.gameView = gameView;
-        Mose mose = new Mose(1,1);
+        mose = new Mose(1,1);
         repaint();
     }
 

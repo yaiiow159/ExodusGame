@@ -8,6 +8,7 @@ import com.exodusgame.mode.disasterViewMode.TombStone;
 
 import javax.swing.*;
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class DisasterView extends GameView {
     private ArrayList<Bug> bugArrayList = new ArrayList<>();
@@ -33,7 +34,7 @@ public class DisasterView extends GameView {
     private ArrayList<TombStone> tombStoneArrayList = new ArrayList<>();
 
     public DisasterView() {
-        img = new ImageIcon(getClass().getResource("/egypt.jpg"));
+        img = new ImageIcon(Objects.requireNonNull(getClass().getResource("/egypt.jpg")));
         elements = new ArrayList<>();
         door = new Door(10, 10);
 
